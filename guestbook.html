@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>厦门轨道交通集团有限公司</title>
+    <link href="css/style.css" rel="stylesheet"/>
+</head>
+<body>
+<div class="wrapper">
+    <div class="header">
+				<div class="logo"><a href="index.html"><img src="images/logo.png" alt="" /></a></div>
+				<ul class="nav clearfix">
+					<li>
+						<a href="index.html" >首页</a>
+					</li>
+					<li>
+						<a href="companyOverview.html" class="on">企业概况</a>
+					</li>
+					<li>
+						<a href="newsCenter.html">新闻中心</a>
+					</li>
+					<li>
+						<a href="SubwayConstruct.html">地铁建设</a>
+					</li>
+					<li>
+						<a href="partyWork.html">党群工作</a>
+					</li>
+					<li>
+						<a href="trafficControl.html">交通管制</a>
+					</li>
+					<li>
+						<a href="bidding.html">招投标信息</a>
+					</li>
+					<li>
+						<a href="subwayCulture.html">地铁文化</a>
+					</li>
+					<li>
+						<a href="recruitment.html">招贤纳才</a>
+					</li>
+				</ul>
+			</div>
+
+    <div class="main clearfix">
+        <div class="tab-menu">
+            <h2>在线咨询</h2>
+            <ul>
+                <li class="active">留言反馈</li>
+                <li>热点问题</li>
+                <li>网络公告</li>
+            </ul>
+        </div>
+        <div class="tab-con">
+            <div class="guestbook">
+                <h2>留言反馈</h2>
+               	<span class="book-desc">尊敬的市民朋友：<br />
+如果您对我们的网站内容及服务有任何意见和建议请随时告诉我们，我们将尽快给您满意的答复。
+延时说明：由于您的留言需要我们细心审核回复，所以问题回复可能延时，敬请谅解！
+               	</span>
+                <div class="book-content">
+                		<table>
+                			<tbody>
+                				<tr>
+                				<th><span class="red">*</span>主&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;题：</th>
+                				<td><input class="cominput" type="text" /></td>
+                			</tr>
+                			<tr>
+                				<th><span class="red">*</span>内&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;容：</th>
+                				<td><textarea class="comtextarea" rows="10"></textarea></td>
+                			</tr>
+                			<tr>
+                				<th><span class="red">*</span>您的姓名：</th>
+                				<td><input class="cominput" type="text" /></td>
+                			</tr>
+                			<tr>
+                				<th>您的电话：</th>
+                				<td><input class="cominput" type="text" /></td>
+                			</tr>
+                			<tr>
+                				<th>您的邮箱：</th>
+                				<td><input class="cominput" type="text" /></td>
+                			</tr>
+                			<tr>
+                				<th><span class="red">*</span>验&nbsp;证&nbsp;码：</th>
+                				<td><input class="cominput yzm" type="text" /> <img class="tbimg" src="images/ymz.png" /> </td>
+                			</tr>
+                			</tbody>
+                			<tfoot>
+                				<tr>
+                					<td></td>
+                					<td><a class="combtn_normal" href="###">提交反馈</a> <a class="combtn_disable" href="###">取消</a></td>
+                				</tr>
+                			</tfoot>
+                		</table>
+                	
+                </div>
+            </div>
+            <div class="hide spirit">
+                <h2>热点问题</h2>
+            </div>
+            <div class="hide speech">
+                <h2>网站公告</h2>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">
+        <p>Copyright © 2016-2020 厦门轨道交通集团有限公司 All Rights Reserved</p>
+        <p>闽ICP备12004272号</p>
+    </div>
+</div>
+</body>
+<script src="js/jquery-1.8.3.min.js"></script>
+<script>
+    $(".tab-menu ul li").click(function () {
+        $(this).addClass("active").siblings().removeClass("active");
+        var $index = $(this).index();
+        $(".tab-con>div").eq($index).show().siblings().hide();
+    });
+</script>
+</html>

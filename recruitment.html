@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>厦门轨道交通集团有限公司</title>
+    <link href="css/style.css" rel="stylesheet"/>
+</head>
+<body>
+<div class="wrapper">
+    <div class="header">
+				<div class="logo"><a href="index.html"><img src="images/logo.png" alt="" /></a></div>
+				<ul class="nav clearfix">
+					<li>
+						<a href="index.html" >首页</a>
+					</li>
+					<li>
+						<a href="companyOverview.html">企业概况</a>
+					</li>
+					<li>
+						<a href="newsCenter.html">新闻中心</a>
+					</li>
+					<li>
+						<a href="SubwayConstruct.html">地铁建设</a>
+					</li>
+					<li>
+						<a href="partyWork.html">党群工作</a>
+					</li>
+					<li>
+						<a href="trafficControl.html">交通管制</a>
+					</li>
+					<li>
+						<a href="bidding.html">招投标信息</a>
+					</li>
+					<li>
+						<a href="subwayCulture.html">地铁文化</a>
+					</li>
+					<li>
+						<a href="recruitment.html" class="on">招贤纳才</a>
+					</li>
+				</ul>
+			</div>
+
+    <div class="main clearfix">
+        <div class="banner"><img src="images/recruit-banner.jpg" alt="#"/></div>
+        <div class="clearfix">
+            <div class="recruit-l">
+                <div class="block">
+                    <h2>集团岗位招聘<span class="icon-down"></span></h2>
+
+                    <div>
+                        <div>
+                            <ul class="post-msg clearfix">
+                                <li class="post">Java开发工程师</li>
+                                <li class="time">2016-12-14</li>
+                                <li class="address">广州</li>
+                            </ul>
+                            <h4>职责描述</h4>
+
+                            <p>1、依据项目或产品要求，进行项目或产品的开发；</p>
+
+                            <p>2、依据项目或产品要求，进行项目或产品的开发。</p>
+                            <br/>
+                            <h4>任职要求</h4>
+
+                            <p>1、大专及以上学历，计算机相关专业；一年以上J2EE开发经验；</p>
+
+                            <p>2、在J2EE主流架构Struts2、Spring、Hibernate技术上有开发经验；</p>
+                            <br/>
+                            <a href="javascript:void(0);" class="apply-btn">立即申请</a>
+                        </div>
+                        <br/>
+                        <div>
+                            <ul class="post-msg clearfix">
+                                <li class="post">Maximo开发工程师</li>
+                                <li class="time">2016-12-14</li>
+                                <li class="address">广州</li>
+                            </ul>
+                            <h4>职责描述</h4>
+
+                            <p>1、依据项目或产品要求，进行项目或产品的开发；</p>
+
+                            <p>2、依据项目或产品要求，进行项目或产品的开发。</p>
+                            <br/>
+                            <h4>任职要求</h4>
+
+                            <p>1、大专及以上学历，计算机相关专业；一年以上J2EE开发经验；</p>
+
+                            <p>2、在J2EE主流架构Struts2、Spring、Hibernate技术上有开发经验；</p>
+                            <br/>
+                            <a href="javascript:void(0);" class="apply-btn">立即申请</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="block">
+                    <h2>运营岗位招聘<span class="icon-down"></span></h2>
+
+                    <div>
+                        <div>
+                            <ul class="post-msg clearfix">
+                                <li class="post">Java开发工程师</li>
+                                <li class="time">2016-12-14</li>
+                                <li class="address">广州</li>
+                            </ul>
+                            <h4>职责描述</h4>
+
+                            <p>1、依据项目或产品要求，进行项目或产品的开发；</p>
+
+                            <p>2、依据项目或产品要求，进行项目或产品的开发。</p>
+                            <br/>
+                            <h4>任职要求</h4>
+
+                            <p>1、大专及以上学历，计算机相关专业；一年以上J2EE开发经验；</p>
+
+                            <p>2、在J2EE主流架构Struts2、Spring、Hibernate技术上有开发经验；</p>
+                            <br/>
+                            <a href="javascript:void(0);" class="apply-btn">立即申请</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="recruit-r">
+                <a><img src="images/talentPolicy.jpg" alt="#"/></a>
+                <a><img src="images/my-apply.jpg" alt="#"/></a>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">
+        <p>Copyright © 2016-2020 厦门轨道交通集团有限公司 All Rights Reserved</p>
+
+        <p>闽ICP备12004272号</p>
+    </div>
+</div>
+</body>
+<script src="js/jquery-1.8.3.min.js"></script>
+<script>
+    //收起展开
+    $(".block h2 span").toggle(function(){
+        $(this).parent().next().slideUp(600);
+        $(this).removeClass("icon-down").addClass("icon-up");
+    },function(){
+        $(this).parent().next().slideDown(600);
+        $(this).removeClass("icon-up").addClass("icon-down");
+    });
+</script>
+</html>

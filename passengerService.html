@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>厦门轨道交通集团有限公司</title>
+    <link href="css/style.css" rel="stylesheet"/>
+</head>
+<body>
+<div class="wrapper">
+    <div class="header">
+				<div class="logo"><a href="index.html"><img src="images/logo.png" alt="" /></a></div>
+				<ul class="nav clearfix">
+					<li>
+						<a href="index.html">首页</a>
+					</li>
+					<li>
+						<a href="companyOverview.html">企业概况</a>
+					</li>
+					<li>
+						<a href="newsCenter.html">新闻中心</a>
+					</li>
+					<li>
+						<a href="SubwayConstruct.html">地铁建设</a>
+					</li>
+					<li>
+						<a href="partyWork.html">党群工作</a>
+					</li>
+					<li>
+						<a href="trafficControl.html">交通管制</a>
+					</li>
+					<li>
+						<a href="bidding.html">招投标信息</a>
+					</li>
+					<li>
+						<a href="subwayCulture.html">地铁文化</a>
+					</li>
+					<li>
+						<a href="recruitment.html">招贤纳才</a>
+					</li>
+				</ul>
+			</div>
+
+    <div class="main clearfix">
+        <div class="tab-menu">
+            <h2>乘客服务</h2>
+            <ul>
+                <li class="active">乘车指南</li>
+                <li>线路查询</li>
+                <li>相关法规</li>
+                <li>安全常识</li>
+                <li>列车介绍</li>
+                <li>服务实施</li>
+                <li>列车时刻</li>
+            </ul>
+        </div>
+        <div class="tab-con">
+            <div class="guide">
+                <h2>乘车指南</h2>
+                <p>1、请勿在车站和车厢内吸烟、随地吐痰、便溺、乱扔果皮、纸屑等。 </p>
+                <div><img src="images/passenger-guide.jpg" alt="#"/></div>
+                <p>2、请勿在车站付费区、列车内饮食。</p>
+                <p>3、请勿在车站和车厢内嬉戏、推撞或奔跑。</p>
+                <p>4、严禁损坏灯箱、多媒体屏、墙贴、玻璃贴看板等广告宣传设施。</p>
+                <p>5、严禁乞讨、拾荒、卖艺、躺卧、踩踏坐席。</p>
+                <p>6、严禁擅自进入轨道、隧道或其他有警示标志的区域。</p>
+                <p>7、严禁携带长度超过1.6米、重量超过30千克、体积超过0.15立方米或长、宽、高之和超过1.8米的物品。列车拥挤时，应当听从工作人员安排，不得强行上车。</p>
+                <p>8、严禁携带以下物品进站乘车：</p>
+                <p>（1）易燃、易爆、有毒、放射性、腐蚀性等危险品，如汽油、炸药、强酸、强碱等。</p>
+                <p>（2）枪支弹药和管制器具（持有效证件执行公务的国家安全、军务、警务、海关等特种人员携带的除外）。</p>
+                <p>（3）畜禽、宠物等动物（残疾人携带有识别标识的助残犬除外）。</p>
+                <p>（4）有严重异味、易污损设施的物品。</p>
+                <p>（5）未经安全包装的易碎、尖锐等其他物品。</p>
+                <p>9、严禁乞讨、拾荒、卖艺、躺卧、踩踏坐席。</p>
+            </div>
+            <div class="hide">
+                <h2>线路查询</h2>
+            </div>
+            <div class="hide">
+                <h2>相关法规</h2>
+            </div>
+            <div class="hide">
+                <h2>安全常识</h2>
+            </div>
+            <div class="hide">
+                <h2>列车介绍</h2>
+            </div>
+            <div class="hide">
+                <h2>服务实施</h2>
+            </div>
+            <div class="hide">
+                <h2>列车时刻</h2>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">
+        <p>Copyright © 2016-2020 厦门轨道交通集团有限公司 All Rights Reserved</p>
+        <p>闽ICP备12004272号</p>
+    </div>
+</div>
+</body>
+<script src="js/jquery-1.8.3.min.js"></script>
+<script>
+    $(".tab-menu ul li").click(function () {
+        $(this).addClass("active").siblings().removeClass("active");
+        var $index = $(this).index();
+        $(".tab-con>div").eq($index).show().siblings().hide();
+    });
+</script>
+</html>
